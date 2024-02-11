@@ -1,0 +1,32 @@
+#labelСlockD {
+    font-family: sans-serif;
+}
+.clock {
+    border-radius: 50%;
+    background-color: rgb(252, 202, 102);  
+}
+.numbers {
+    border-radius: 50%;
+    background-color: rgb(72, 179, 130);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.hourHand {
+    position: absolute;
+    background-color: black;
+}
+.minuteHand {
+    position: absolute;
+    background-color: black;
+}
+.secondHand {
+    position: absolute;
+    background-color: black;
+}
+.digitalTime {
+    font-family: sans-serif;
+    position: absolute;
+}
