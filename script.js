@@ -17,14 +17,14 @@ function createСlock() {
     let numbersSize = Math.round(clockDiameter/100*6); //размер числа на циферблате (6% от диаметра циферблата)
     let distance = Math.round(clockDiameter/100*3); //расстояние от края циферблата до кругов с числами (3% от диаметра циферблата)
 
-    let hourHandWidth = clockDiameter/100*3; //ширина часовой стрелки (3% от диаметра циферблата)
-    let hourHandHeight = clockDiameter/100*26; //длина часовой стрелки (26% от диаметра циферблата)
-    let minuteHandWidth = clockDiameter/100*2; //ширина минутной стрелки (2% от диаметра циферблата)
-    let minuteHandHeight = clockDiameter/100*40; //длина минутной стрелки (40% от диаметра циферблата)
-    let secondHandWidth = clockDiameter/100*0.7; //ширина секундной стрелки (0.7% от диаметра циферблата)
-    let secondHandHeight = clockDiameter/100*46; //длина секундной стрелки (46% от диаметра циферблата)
-    let arrowCenterOffset = clockDiameter/100*4; //смещение центра стрелки (4% от нижнего края)
-    let sizeDigitalTime = clockDiameter/100*10; //размер цифровых часов (10% от диаметра циферблата)
+    let hourHandWidth = Math.round(clockDiameter/100*3); //ширина часовой стрелки (3% от диаметра циферблата)
+    let hourHandHeight = Math.round(clockDiameter/100*26); //длина часовой стрелки (26% от диаметра циферблата)
+    let minuteHandWidth = Math.round(clockDiameter/100*2); //ширина минутной стрелки (2% от диаметра циферблата)
+    let minuteHandHeight = Math.round(clockDiameter/100*40); //длина минутной стрелки (40% от диаметра циферблата)
+    let secondHandWidth = Math.round(clockDiameter/100*0.7); //ширина секундной стрелки (0.7% от диаметра циферблата)
+    let secondHandHeight = Math.round(clockDiameter/100*46); //длина секундной стрелки (46% от диаметра циферблата)
+    let arrowCenterOffset = Math.round(clockDiameter/100*4); //смещение центра стрелки (4% от нижнего края)
+    let sizeDigitalTime = Math.round(clockDiameter/100*10); //размер цифровых часов (10% от диаметра циферблата)
 
     const degreesInHour = 360/12 // на столько град. передвигается часовая стрелка за 1 час
     const degreesInMinuteForHour = 360/12/60 // на столько град. передвигается часовая стрелка за 1 минуту
@@ -150,6 +150,10 @@ function createСlock() {
     }
 
 }
+
+
+
+
 
 
 
